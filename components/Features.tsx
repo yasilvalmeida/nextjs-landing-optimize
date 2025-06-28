@@ -114,10 +114,10 @@ const Features = () => {
               <motion.div
                 key={feature.title}
                 variants={cardVariants}
-                className='group'
+                className='group h-full'
               >
                 <motion.div
-                  className='relative p-8 rounded-2xl border border-secondary-200 bg-white hover:bg-secondary-50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 hover:-translate-y-2'
+                  className='relative p-8 rounded-2xl border border-secondary-200 bg-white hover:bg-secondary-50 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/10 hover:-translate-y-2 h-full flex flex-col'
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -132,7 +132,7 @@ const Features = () => {
                   <h3 className='text-xl font-bold text-secondary-900 mb-4 group-hover:text-primary-600 transition-colors duration-300'>
                     {feature.title}
                   </h3>
-                  <p className='text-secondary-600 leading-relaxed'>
+                  <p className='text-secondary-600 leading-relaxed flex-grow'>
                     {feature.description}
                   </p>
 
