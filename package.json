@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-landing-optimize",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "lighthouse": "lhci autorun",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.300.0",
+    "@next/third-parties": "^14.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "@playwright/test": "^1.40.1",
+    "@axe-core/playwright": "^4.8.2",
+    "@lhci/cli": "^0.12.0",
+    "cross-env": "^7.0.3",
+    "@next/bundle-analyzer": "^14.0.4"
+  }
+}
